@@ -114,6 +114,7 @@ if (env === 'test') {
     plugins: plugins.concat([
       // function* () { yield 42; yield 43; }
       [
+        require.resolve('babel-plugin-relay'),
         require.resolve('babel-plugin-transform-regenerator'),
         {
           // Async functions are converted to generators by babel-preset-env
